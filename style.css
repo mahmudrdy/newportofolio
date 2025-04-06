@@ -1,0 +1,71 @@
+.hero-box {
+    min-height: 250px;
+}
+.bg-custom-header {
+    background-color: #353A3E;
+}
+.bg-costume-content {
+    background-color: #E0E0E0;
+}
+.text-costume {
+    color: #353A3E;
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+.costume-icon {
+    font-size: 40px;
+}
+.costume-border {
+    border: 1px solid #353A3E;
+}
+.icon-wrapper {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.costume-button {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: #353A3E;
+    outline: none;
+    border: none;
+}
+#profileData {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+}
+  
+#profileData.show {
+    max-height: 500px;
+    opacity: 1;
+}
+#mobileNav .nav-item {
+    color: #ccc;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #mobileNav .nav-item i {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 2px;
+  }
+  
+  #mobileNav .nav-item:hover,
+  #mobileNav .nav-item.active {
+    color: #0dcaf0; /* warna aktif, bisa disesuaikan */
+  }
+  
+  

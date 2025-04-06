@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Santri Dev</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="container-fluid bg-custom-header position-fixed top-0 start-0 w-100 shadow p-2" id="header">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+      <a href="#" class="text-white text-decoration-none fs-5 fw-bold">SantriDev</a>
+      <nav class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
+        <ul class="list-unstyled d-flex flex-column flex-lg-row align-items-lg-center gap-3 mb-0">
+          <li><a href="#beranda" class="text-white text-decoration-none">Beranda</a></li>
+          <li><a href="#blog" class="text-white text-decoration-none">Blog</a></li>
+          <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <nav id="mobileNav" class="d-md-none fixed-bottom bg-dark text-white border-top shadow-lg">
+      <div class="container d-flex justify-content-around align-items-center py-3">
+        <a href="#contact" class="nav-item text-center active">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="#beranda" class="nav-item text-center">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="#blog" class="nav-item text-center">
+          <i class="fa-solid fa-blog"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="container min-vh-100 d-flex flex-column justify-content-center" id="beranda">
+    <div class="row g-4">
+      <div class="col-12 col-md-6">
+        <div class="bg-costume-content text-white p-4 rounded-2 shadow hero-box flex-column d-flex align-items-center justify-content-center">
+          <img src="Foto.jpg" class="w-25 rounded-circle" alt="Foto Profil">
+          <div class="container d-flex flex-column justify-content-center align-items-center">
+            <button type="button" class="costume-button text-white" id="toggleBtn">Profile</button>
+            <div class="container d-flex flex-column justify-content-center align-items-center mt-3" id="profileData">
+              <span class="container"><p class="bg-custom-header p-2 rounded-2">Nama   : Mahmud Riady</p></span>
+              <span class="container"><p class="bg-custom-header p-2 rounded-2">Umur   : 21 Tahun</p></span>
+              <span class="container"><p class="bg-custom-header p-2 rounded-2">Alamat : Lar-lar Banyuates Sampang</p></span>
+            </div>
+          </div>          
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="bg-costume-content text-white p-4 rounded-2 shadow hero-box d-flex flex-column align-items-center justify-content-center">
+          <div class="text-center">
+            <h2 class="text-costume">Skills</h2>
+            <span class="d-block mx-auto bg-custom-header" style="width: 100px; height: 4px; border-radius: 10px;"></span>
+            <div class="container mt-3 d-flex flex-wrap gap-3">
+              <span class="icon-wrapper costume-border"><i class="fa-brands fa-html5 text-costume costume-icon p-1"></i></span>
+              <span class="icon-wrapper costume-border"><i class="fa-brands fa-css3-alt text-costume costume-icon"></i></span>
+              <span class="icon-wrapper costume-border"><i class="fa-brands fa-square-js text-costume costume-icon"></i></span>
+              <span class="icon-wrapper costume-border"><i class="fa-brands fa-node text-costume costume-icon"></i></span>
+              <span class="icon-wrapper costume-border"><i class="fa-brands fa-vuejs text-costume costume-icon"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Blog -->
+  <section class="container py-5 min-vh-100 d-flex align-items-center flex-column justify-content-center" id="blog">
+    <h2 class="text-costume">My Blog</h2>
+    <span class="d-block mx-auto bg-custom-header" style="width: 150px; height: 4px; border-radius: 10px;"></span>
+    <div class="bg-costume-content text-white p-5 rounded-2 shadow text-center w-100 mt-3">
+      <h2 class="text-costume">Santri Dev Blog</h2>
+      <p class="lead text-costume">Kami membagikan berbagai tutorial, tips dan berita seputar dunia IT dan pengembangan web!</p>
+      <a href="#" class="btn btn-light mt-3 text-costume bg-custom-header">Baca Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Kolom 1: Branding -->
+        <div class="col-md-4 mb-3">
+          <h5>Santri Dev</h5>
+          <p class="text-muted">Belajar pemrograman web dengan semangat santri yang kreatif dan inovatif.</p>
+        </div>
+  
+        <!-- Kolom 2: Navigasi -->
+        <div class="col-md-4 mb-3">
+          <h5>Menu</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Beranda</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Kolom 3: Sosial Media -->
+        <div class="col-md-4 mb-3">
+          <h5>Ikuti Kami</h5>
+          <a href="#" class="text-white me-3 text-decoration-none">Instagram</a>
+          <a href="#" class="text-white me-3 text-decoration-none">YouTube</a>
+          <a href="#" class="text-white text-decoration-none">TikTok</a>
+        </div>
+      </div>
+  
+      <hr class="border-top border-light" />
+  
+      <div class="text-center text-muted">
+        &copy; 2025 Santri Dev. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
